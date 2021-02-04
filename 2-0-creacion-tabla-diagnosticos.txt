@@ -1,0 +1,13 @@
+CREATE TABLE Clinica.DIAGNOSTICOS (
+  id_diagnostico INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  descripcion VARCHAR(512) NOT NULL,
+  fecha DATE NOT NULL,
+  id_paciente INTEGER UNSIGNED NOT NULL,
+  PRIMARY KEY (id_diagnostico),
+  CONSTRAINT id_paciente_fk_constraint FOREIGN KEY id_paciente_fk_constraint (id_paciente)
+    REFERENCES PACIENTES (id_paciente)
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT
+)
+ENGINE = InnoDB;
+

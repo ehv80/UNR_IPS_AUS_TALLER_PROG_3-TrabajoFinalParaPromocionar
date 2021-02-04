@@ -1,0 +1,11 @@
+CREATE TABLE `Clinica`.`USUARIOS` (
+  `id_usuario` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nombre_real` VARCHAR(30)  NOT NULL,
+  `apellido` VARCHAR(30)  NOT NULL,
+  `nombre_acceso` VARCHAR(30)  NOT NULL,
+  `clave_acceso` VARCHAR(30)  NOT NULL,
+  PRIMARY KEY (`id_usuario`)
+)
+ENGINE = InnoDB
+AUTO_INCREMENT = 1
+CHARACTER SET utf8 COLLATE utf8_general_ci;
